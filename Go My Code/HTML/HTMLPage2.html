@@ -1,0 +1,171 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #ded3d3;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #423737;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+            width: 100%;
+        }
+
+        nav {
+            color: #fff;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px 0;
+            background-color: #383838;
+            border-radius: 8px;
+            width: 80%; 
+            max-width: 800px; 
+            box-sizing: border-box;
+        }
+
+        form {
+            display: grid;
+            gap: 10px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+            width: 100%;
+        }
+
+        img {
+            max-width: 15%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        video {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+
+        /*for responsiveness */
+        @media screen and (max-width: 600px) {
+            section {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Okoli Cecilia Nkiruka</h1> 
+        <nav> 
+            <!-- Unordered list for the NavBar--> 
+               <ul> 
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+
+   <section id="home">
+        <h2>Welcome to My World </h2>
+        <p>This is my home page. Please check it out.  </p>
+    </section>
+
+    <section id="about"> <!-- About Section--> 
+        <h2>About Me</h2>
+        <p>I am a presenter,a public speaker and a jounalist.
+            <br>
+            I want to be able to design , create and develop webpages in the future and have a full grasp of backend, front end and full stack web development.
+        </p>
+    </section>
+
+    <section id="work"> <!-- My Work--> 
+        <h2>Work</h2>
+        <p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/rEj6XN8M3HY?si=OYjVCk5ng4caNqUW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </p>
+    </section>
+
+    <section id="images">
+        <h2>Image Section</h2>
+        <img src="asset/img.png" alt="Image 1">
+        <img src="asset/image.jpeg" alt="Image 2">
+
+    </section>
+
+    <section id="resume">
+        <h2>Resume</h2>
+        <p>Here is a synopsis of my curriculum vitae and experiences:</p>
+
+        <h3>Qualification</h3>
+        <p>Bachelor of Arts<br>
+        University of Uyo:</p>
+
+        <h3>Skills</h3>
+        <ul>
+            <li>Public speaker: </li>
+            <li> Master of Ceremony: </li>
+            <li>On Air Personality:</li>
+          </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Please fill this form to contact me</h2>
+        <form action="submit_form.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+    <footer>
+  <p>Author: Cecilia Okoli</p>
+  <p><a href="https://gomycode.com/ng/">https://gomycode.com/ng .Click here for more information</a></p>
+</footer>
+</body>
+</html>
+
+
+
+
